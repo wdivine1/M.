@@ -1,0 +1,72 @@
+:root {
+  /* MATRI brand palette */
+  --matri-plum: #2b0d1d;       /* deep plum background */
+  --matri-rose: #cf8e84;       /* warm rose accent */
+  --matri-cream: #e7d8cf;      /* soft cream text */
+  --matri-forest: #1f4c41;     /* deep green accent */
+  --matri-plum-600: #3a1730;   /* elevated surfaces */
+  --matri-plum-700: #4a2140;   /* borders */
+
+  /* Semantic tokens (shadcn/tailwind style) */
+  --background: var(--matri-plum);
+  --foreground: var(--matri-cream);
+
+  --card: var(--matri-plum-600);
+  --card-foreground: var(--matri-cream);
+
+  --popover: var(--matri-plum-600);
+  --popover-foreground: var(--matri-cream);
+
+  --primary: var(--matri-rose);
+  --primary-foreground: var(--matri-plum);
+
+  --secondary: var(--matri-forest);
+  --secondary-foreground: var(--matri-cream);
+
+  --muted: var(--matri-plum-600);
+  --muted-foreground: #d8c8bf;
+
+  --accent: var(--matri-forest);
+  --accent-foreground: var(--matri-cream);
+
+  --destructive: #b45309; /* warm orange for alerts */
+  --destructive-foreground: #fff7ed;
+
+  --border: var(--matri-plum-700);
+  --input: var(--matri-plum-700);
+  --ring: var(--matri-rose);
+
+  --radius: 0.75rem;
+}
+
+html, body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Utility mappings to existing class names used in the app */
+.bg-background { background-color: var(--background) !important; }
+.text-primary-foreground { color: var(--foreground) !important; }
+.text-muted-foreground { color: var(--muted-foreground) !important; }
+
+.bg-harmony-brown { background-color: var(--matri-plum) !important; }
+.text-harmony-brown { color: var(--matri-plum) !important; }
+.bg-harmony-cream { background-color: var(--matri-cream) !important; }
+.text-matri-cream { color: var(--matri-cream) !important; }
+.bg-harmony-warm { background-color: var(--matri-rose) !important; }
+
+/***** Buttons and interactive elements *****/
+button, .btn {
+  border-radius: var(--radius);
+}
+
+/* Optional hover helpers used in the header button */
+.hover\:bg-harmony-warm:hover { background-color: var(--matri-rose) !important; }
+
+/* Cards and panels default styling if utility classes are missing */
+.panel, .card {
+  background-color: var(--card);
+  color: var(--card-foreground);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}

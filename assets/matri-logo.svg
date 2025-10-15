@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- MATRI emblem: circle, maternal figure, inner leaf -->
+  <circle cx="128" cy="128" r="108" stroke="#cf8e84" stroke-width="12" fill="none"/>
+  <!-- head -->
+  <circle cx="128" cy="76" r="16" stroke="#cf8e84" stroke-width="10" fill="none"/>
+  <!-- arms/body outline -->
+  <path d="M128 196c36-32 36-64 0-96m0 96c-36-32-36-64 0-96" stroke="#cf8e84" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- leaf (protection) -->
+  <path d="M128 156c18-22 18-44 0-66c-18 22-18 44 0 66z" fill="#1f4c41"/>
+</svg>
