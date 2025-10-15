@@ -6,6 +6,7 @@ import { PingDoula } from "@/components/PingDoula";
 import { DoulaDashboard } from "@/components/DoulaDashboard";
 import { HealthEducation } from "@/components/HealthEducation";
 import { HealthConditionsOnboarding } from "@/components/HealthConditionsOnboarding";
+import { DoulaOnboarding } from "./DoulaOnboarding";
 import { SuggestedCareTeam } from "@/components/SuggestedCareTeam";
 import { PostpartumAnxietyAssessment } from "@/components/PostpartumAnxietyAssessment";
 import { PerinatalAnxietyScale } from "@/components/PerinatalAnxietyScale";
@@ -111,6 +112,9 @@ const Index = () => {
   }
 
   if (showOnboarding) {
+    if (userRole === 'doula') {
+      return <DoulaOnboarding onComplete={handleOnboardingComplete} />;
+    }
     return <HealthConditionsOnboarding onComplete={handleOnboardingComplete} />;
   }
 
