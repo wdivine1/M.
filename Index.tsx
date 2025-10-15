@@ -20,6 +20,7 @@ import { useDueDateCheck } from "@/hooks/useDueDateCheck";
 import { DueDateCheckPrompt } from "@/components/DueDateCheckPrompt";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { useAuditLog } from "@/hooks/useAuditLog";
+import "./brand.css";
 
 const Index = () => {
   const { user, signOut } = useAuth();
@@ -138,10 +139,10 @@ const Index = () => {
       <header className="bg-harmony-brown text-primary-foreground p-4 shadow-sm">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <img 
-              src="/src/assets/matri-logo.jpg" 
-              alt="MATRI Logo" 
-              className="w-12 h-12 rounded-full object-cover"
+            <img
+              src="/assets/matri-logo.svg"
+              alt="MATRI Logo"
+              className="w-12 h-12 object-contain"
             />
           <div>
             <h1 className="text-2xl font-bold">MATRI</h1>
